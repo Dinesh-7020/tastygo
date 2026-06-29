@@ -7,3 +7,4 @@ npm-debug.log*
 Thumbs.db 
 tastygo.zip 
 node_modules/ 
+*.zip 
