@@ -1,0 +1,122 @@
+// ─── mockData.js ────────────────────────────────────────────────────────────
+// Single source of truth for all static content.
+// Import restaurants or menuItems wherever you need them.
+
+export const categories = ['All', 'Pizza', 'Burgers', 'Sushi', 'Indian', 'Chinese', 'Desserts'];
+
+export const restaurants = [
+  {
+    id: 'r1',
+    name: 'Pizza Palace',
+    category: 'Pizza',
+    rating: 4.5,
+    deliveryTime: '25-35 min',
+    deliveryFee: 29,
+    minOrder: 199,
+    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80',
+    description: 'Authentic wood-fired pizzas made fresh daily.',
+    tags: ['Bestseller', 'Popular'],
+  },
+  {
+    id: 'r2',
+    name: 'Burger Barn',
+    category: 'Burgers',
+    rating: 4.3,
+    deliveryTime: '20-30 min',
+    deliveryFee: 19,
+    minOrder: 149,
+    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80',
+    description: 'Juicy smash burgers with hand-cut fries.',
+    tags: ['New'],
+  },
+  {
+    id: 'r3',
+    name: 'Sushi Sakura',
+    category: 'Sushi',
+    rating: 4.7,
+    deliveryTime: '35-45 min',
+    deliveryFee: 49,
+    minOrder: 299,
+    image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&q=80',
+    description: 'Premium omakase-style rolls delivered fresh.',
+    tags: ['Premium'],
+  },
+  {
+    id: 'r4',
+    name: 'Spice Garden',
+    category: 'Indian',
+    rating: 4.6,
+    deliveryTime: '30-40 min',
+    deliveryFee: 24,
+    minOrder: 199,
+    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80',
+    description: 'Home-style Indian curries and tandoor specialties.',
+    tags: ['Bestseller'],
+  },
+  {
+    id: 'r5',
+    name: 'Dragon Wok',
+    category: 'Chinese',
+    rating: 4.2,
+    deliveryTime: '25-35 min',
+    deliveryFee: 19,
+    minOrder: 149,
+    image: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&q=80',
+    description: 'Classic Chinese dishes cooked over a blazing wok.',
+    tags: [],
+  },
+  {
+    id: 'r6',
+    name: 'Sweet Tooth',
+    category: 'Desserts',
+    rating: 4.8,
+    deliveryTime: '15-25 min',
+    deliveryFee: 15,
+    minOrder: 99,
+    image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80',
+    description: 'Artisan cakes, waffles, and cloud-soft pastries.',
+    tags: ['Popular'],
+  },
+];
+
+export const menuItems = {
+  r1: [
+    { id: 'm101', name: 'Margherita Pizza', price: 349, description: 'San Marzano tomato, fresh mozzarella, basil.', category: 'Vegetarian', image: 'https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&q=80', isVeg: true },
+    { id: 'm102', name: 'Pepperoni Blast', price: 429, description: 'Double pepperoni, mozzarella, tomato sauce.', category: 'Non-Veg', image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&q=80', isVeg: false },
+    { id: 'm103', name: 'BBQ Chicken Pizza', price: 449, description: 'Smoked chicken, BBQ drizzle, red onion.', category: 'Non-Veg', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80', isVeg: false },
+    { id: 'm104', name: 'Garden Veggie', price: 379, description: 'Bell peppers, olives, mushrooms, corn.', category: 'Vegetarian', image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&q=80', isVeg: true },
+    { id: 'm105', name: 'Garlic Breadsticks', price: 149, description: 'Oven-baked with herb butter and marinara dip.', category: 'Sides', image: 'https://images.unsplash.com/photo-1619740455993-9d622fc58b5a?w=400&q=80', isVeg: true },
+  ],
+  r2: [
+    { id: 'm201', name: 'Classic Smash Burger', price: 249, description: 'Double smash patty, American cheese, pickles.', category: 'Burgers', image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&q=80', isVeg: false },
+    { id: 'm202', name: 'Crispy Chicken Burger', price: 279, description: 'Buttermilk fried chicken, slaw, sriracha mayo.', category: 'Burgers', image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&q=80', isVeg: false },
+    { id: 'm203', name: 'Veggie Stack Burger', price: 229, description: 'Black bean patty, avocado, lettuce, tomato.', category: 'Burgers', image: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?w=400&q=80', isVeg: true },
+    { id: 'm204', name: 'Hand-Cut Fries', price: 99, description: 'Crispy salted fries with dipping sauce.', category: 'Sides', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&q=80', isVeg: true },
+    { id: 'm205', name: 'Chocolate Milkshake', price: 149, description: 'Thick Belgian chocolate shake, whipped cream.', category: 'Drinks', image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&q=80', isVeg: true },
+  ],
+  r3: [
+    { id: 'm301', name: 'Salmon Nigiri (6 pcs)', price: 549, description: 'Premium Norwegian salmon over seasoned rice.', category: 'Nigiri', image: 'https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=400&q=80', isVeg: false },
+    { id: 'm302', name: 'Dragon Roll', price: 499, description: 'Shrimp tempura, avocado, eel sauce.', category: 'Rolls', image: 'https://images.unsplash.com/photo-1617196034099-1ccd7c0b833d?w=400&q=80', isVeg: false },
+    { id: 'm303', name: 'Vegetable Maki (8 pcs)', price: 329, description: 'Cucumber, avocado, carrot, sesame.', category: 'Rolls', image: 'https://images.unsplash.com/photo-1617196034738-26c5f7c977ce?w=400&q=80', isVeg: true },
+    { id: 'm304', name: 'Miso Soup', price: 129, description: 'Traditional dashi broth, tofu, wakame.', category: 'Sides', image: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80', isVeg: true },
+  ],
+  r4: [
+    { id: 'm401', name: 'Butter Chicken', price: 349, description: 'Tender chicken in rich tomato-cream gravy.', category: 'Curries', image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&q=80', isVeg: false },
+    { id: 'm402', name: 'Paneer Tikka Masala', price: 319, description: 'Smoky cottage cheese in spiced masala.', category: 'Curries', image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&q=80', isVeg: true },
+    { id: 'm403', name: 'Garlic Naan (2 pcs)', price: 89, description: 'Tandoor-baked with garlic butter finish.', category: 'Breads', image: 'https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=400&q=80', isVeg: true },
+    { id: 'm404', name: 'Biryani (Chicken)', price: 379, description: 'Dum-cooked basmati rice with spiced chicken.', category: 'Rice', image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&q=80', isVeg: false },
+    { id: 'm405', name: 'Mango Lassi', price: 99, description: 'Chilled yoghurt drink blended with Alphonso mango.', category: 'Drinks', image: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80', isVeg: true },
+  ],
+  r5: [
+    { id: 'm501', name: 'Kung Pao Chicken', price: 299, description: 'Wok-tossed chicken, peanuts, dried chillies.', category: 'Mains', image: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?w=400&q=80', isVeg: false },
+    { id: 'm502', name: 'Vegetable Fried Rice', price: 199, description: 'Egg-free wok rice with seasonal vegetables.', category: 'Rice', image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&q=80', isVeg: true },
+    { id: 'm503', name: 'Dim Sum Basket (6 pcs)', price: 249, description: 'Steamed pork and prawn dumplings.', category: 'Starters', image: 'https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=400&q=80', isVeg: false },
+    { id: 'm504', name: 'Hot & Sour Soup', price: 149, description: 'Classic tangy broth with tofu and mushrooms.', category: 'Soups', image: 'https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=80', isVeg: true },
+  ],
+  r6: [
+    { id: 'm601', name: 'Belgian Waffle', price: 199, description: 'Crispy waffle, Nutella, fresh strawberries.', category: 'Waffles', image: 'https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=400&q=80', isVeg: true },
+    { id: 'm602', name: 'Chocolate Lava Cake', price: 179, description: 'Warm cake with molten dark chocolate centre.', category: 'Cakes', image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&q=80', isVeg: true },
+    { id: 'm603', name: 'Mango Cheesecake Slice', price: 229, description: 'No-bake cheesecake on a buttery biscuit base.', category: 'Cakes', image: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80', isVeg: true },
+    { id: 'm604', name: 'Ice Cream Sundae', price: 159, description: 'Three scoops, hot fudge, nuts, cherry on top.', category: 'Ice Cream', image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80', isVeg: true },
+  ],
+};

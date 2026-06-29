@@ -1,0 +1,17 @@
+/* ─── Restaurants.css ────────────────────────────────────────────────────── */
+
+.restaurants-page {}
+
+.restaurants-toolbar {
+  margin-bottom: var(--space-md);
+}
+
+.toolbar-bottom {
+  margin-bottom: var(--space-xl);
+}
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
