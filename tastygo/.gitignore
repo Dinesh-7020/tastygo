@@ -5,3 +5,5 @@ build/
 npm-debug.log* 
 .DS_Store 
 Thumbs.db 
+tastygo.zip 
+node_modules/ 
